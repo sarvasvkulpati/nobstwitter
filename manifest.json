@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "No BS Twitter",
+  "description": "Use Twitter without the BS",
+  "version": "1.0",
+
+  "icons": { 
+           "48": "icon48.png",
+          "128": "icon128.png" },
+
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitter.com/*", "*://twitter.com/*"],
+      "css": ["hide-twitter-sidebar.css"]
+    }
+  ],
+  "permissions": ["*://*.twitter.com/*", "*://twitter.com/*"]
+}
