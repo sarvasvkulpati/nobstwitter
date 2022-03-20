@@ -21,3 +21,9 @@
  display: none !important;
 }
 
+
+
+/* likes retweets and comments counters */
+span[data-testid="app-text-transition-container"] {
+  display: none !important;
+}
